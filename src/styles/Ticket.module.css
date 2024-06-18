@@ -1,0 +1,25 @@
+.ticketCard{
+    display: flex;
+}
+
+.row1{
+    display: flex;
+    rotate: 90;
+}
+
+.row2{
+    display: flex;
+}
+
+.col1{
+    margin: 20px;
+}
+
+.content{
+    display: block;
+    columns: 2;
+}
+
+.col2{
+    margin: 10px;
+}

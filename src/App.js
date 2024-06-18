@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Footer from './components/layouts/footer';
+import './styles/App.css';
+import Navbar from './components/layouts/Navbar';
+import HomePage from './pages/about/index';
+import AboutPage from './pages/about/index';
+import CoursesPage from './pages/courses/index';
+import ContactPage from './pages/contact/index'
+import EventPage from './pages/event/index';
+import PricingPage from  './pages/pricing/index';
+import PlaceHolder from './components/placeholder';
+import SignUpPage from './pages/registration/signUp';
+import SignInPage from './pages/registration/SignIn';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Navbar/>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/signUp" element={<SignUpPage />} />
+          <Route exact path="/signIn" element={<SignInPage />} />
+          <Route path="/events" element={ <EventPage/> } />
+          <Route path="/about" element={ <AboutPage/> }/>
+          <Route path="/courses"element={ <CoursesPage/> }/>
+          <Route path="/contact"element={ <ContactPage/> }/>
+          <Route path="/pricing"element={ <PricingPage/> }/>
+          <Route path="*"element={ <PlaceHolder/> }/>
+        </Routes>
+      </Router>
+      <Footer/>
     </div>
   );
 }

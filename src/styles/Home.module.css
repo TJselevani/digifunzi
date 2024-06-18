@@ -1,0 +1,51 @@
+.welcomeBanner{
+    /* background-color: aquamarine; */
+    /* max-height: 100px; */
+    min-height: 200px;
+    display: block;
+    text-wrap: wrap;
+    border: dotted aquamarine 2px;
+    margin: 20px 0;
+}
+
+.container{
+    min-height: 100vh;
+    padding: 0 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.title{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gridContainer {
+    border: dotted blueviolet 2px;
+    display: grid;
+    grid-template-columns: auto auto ;
+    padding: 10px;
+}
+    
+.gridItem {
+    border: dotted red 2px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.preFooter{
+    display: block;
+    background-color: gray;
+}
+
+.t{
+    border-bottom: 1px solid black;
+
+}
