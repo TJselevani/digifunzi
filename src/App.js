@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from './components/layouts/footer';
 import './styles/App.css';
 import Navbar from './components/layouts/Navbar';
@@ -16,6 +12,8 @@ import PricingPage from  './pages/pricing/index';
 import PlaceHolder from './components/placeholder';
 import SignUpPage from './pages/registration/signUp';
 import SignInPage from './pages/registration/SignIn';
+import GetStarted from './pages/get-started/index';
+import Ticket from './components/ticket';
 
 function App() {
   return (
@@ -31,6 +29,8 @@ function App() {
           <Route path="/courses"element={ <CoursesPage/> }/>
           <Route path="/contact"element={ <ContactPage/> }/>
           <Route path="/pricing"element={ <PricingPage/> }/>
+          <Route path="/api/*"element={ <GetStarted/> }/>
+          <Route path="/ticket"element={ <Ticket/> }/>
           <Route path="*"element={ <PlaceHolder/> }/>
         </Routes>
       </Router>

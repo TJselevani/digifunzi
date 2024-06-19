@@ -12,7 +12,7 @@ export default function Navbar() {
         <a href="/events">Events</a>
         <a href="/Contact">Contact Us</a>
         <a href="/pricing">Pricing</a>
-        <a href="/signUp">Get Started</a>
+        <a href="/api">Get Started</a>
         <a href="/signIn">Sign In</a>
       </div>
     </nav>
