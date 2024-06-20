@@ -1,90 +1,225 @@
-.App{
-  max-width: 1200px;
-  margin: 0 auto;
+* , p, h1, h1, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
+.App{
+  max-width: 1440px;
+}
+
+/* ---------------  Nav bar ------------------ */
 .navbar{
-  padding: 5px 30px;
+  margin-top: 31px;
+  margin-left: 99px;
+  margin-right: 99px;
+  height: 73px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border: dotted green 2px;
-  border-radius: 20px solid #ddd;
 }
+
+.logo1 {
+  width: auto;
+  height: auto;
+  display: block;
+  overflow: hidden;
+  transform: scale(s.2);
+}
+ 
 
 .navbar .logo{
   margin-right: auto;
 }
 
 .navbar .links{
-  border: dotted red 2px;
+
 }
 
-.navbar .links a{
-  color: blue;
+/* .navbar .links a{
+  color: #000000;
   margin: 0 20px;
-  border: dotted green 2px;
+  width: 126.42px;
+  height: 24px;
+  font-family: 'Inter';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: left;
+} */
+/* Add these styles to your CSS file */
+
+.navbar .links a {
+  color: #000000;
+  margin: 0 20px;
+  padding: 10px 5px; /* Add padding to make it look like a button */
+  border-radius: 5px; /* Rounded corners for the button shape */
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: left;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
+.navbar .links a:hover {
+  background-color: #001f3f; /* Deep blue color for hover */
+  color: #ffffff; /* White text color on hover */
+}
+
+.navbar .links a.active {
+  background-color: #001f3f; /* Deep blue color for active link */
+  color: #ffffff; /* White text color for active link */
+}
+
+
+.nav2{
+  margin: 20px 0;
+  border: dashed black 1px;
+}
+
+/* ------------------------ Footer ----------------------------- */
 footer{
   display: block;
+  width: 100%;
+  max-height: 416px;
   padding: 10px;
   border: dotted black 2px;
+  background-size: cover;
 }
 
-.footerLogoText{
-  align-self: flex-start;
-  border: dashed black 1px;
+.footer-logo-container {
+  width: 100%; /* Adjust as needed */
+  max-width: 352px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 112px;
+  overflow: hidden;
+  position: relative;
+}
+
+.footerLogoContainer{
+  width: 352px;
+  height: 112px;
 }
 
 .footerList{
-  border: dashed black 1px;
+  padding: 20px;
 }
+
+.footerListItem h1{
+  margin-bottom: 25px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.13px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.footerListItem p{
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+  text-align: left;
+  color: #FFFFFF;
+
+}
+
+/* '''''''''''''''''''' copyright '''''''''''''''''''''''''' */
 
 .copyright{
-  display: flex;
-  justify-content: space-between;
   margin-top: 20px;
-  border-top: 2px solid black;
+  width: 100%;
+  border-top: 1px solid #FFFFFF;
+  padding-top: 20px;
 }
 
+.copyright-logo a{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  width: 42px;
+  height: 42px;
+  border: 2px 0px 0px 0px;
+  color: #FFFFFF;
+}
 .copyright-logo{
-  border: dashed black 1px;
+  min-width: 42px;
+  min-height: 42px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+  text-align: left;
+  color: #FFFFFF;
 }
 
-.copyright-links{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 3em;
-  border: dashed black 1px;
+.link{
+  width: 42px;
+  height: 42px;
+  color: #FFFFFF;
 }
 
+.mid{
+  margin: 0 auto;
+  max-width: 1220px;
+}
+
+/* ----------------------------------- center ------------------------- */
+.center{
+  margin: 0 auto;
+}
+
+/* ------------------------------------- row ----------------------------- */
 .split{
   display: flex;
-  justify-content: space-between;
-  gap: 2em;
+  justify-content: space-around;
+  gap: 2rem;
 }
 
 .split-h{
   display: flex;
-  gap: 2em;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
 }
 
+.split-h-bare{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.fill-h{
+  width: 100%;
+}
+
+
+/* ---------------------------------------- column --------------------------------- */
 .split-v{
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  justify-content: space-around;
+  gap: 1em;
 }
 
-.center{
-  text-align: center;
-  justify-content: center;
-  align-self: center;
+.split-v-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1em;
 }
 
-.card1{
+/* ----------------------------------------- Panel --------------------------------- */
+.panel{
   border: dashed black 1px;
   display: flex;
   justify-content: flex-end;
@@ -93,35 +228,71 @@ footer{
   box-shadow: 5;
 }
 
-.card1Item{
-  border: dashed brown 1px;
+.panelItem{
   margin: 20px;
-  padding: 0 10px;
+  padding: 0 auto;
 }
 
-.row{
+/* -------------------------------------------- card ------------------------------ */
+.card{
+  padding: 10px;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.nav2{
-  margin: 20px 0;
-  border: dashed black 1px;
+.cardTitleContainer{
+  max-width: 540px;
+  min-height: 24px;
+
+}
+.cardTitle{
+  font-family:'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+  text-align: left;
+  color: #FFFFFF;
 }
 
+.cardParagraphContainer{
+  max-width: 428px;
+  min-height: 8px;
+}
+
+.cardParagraph{
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.44px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+/*  --------------------------------------  Grid ------------------------ */
 .gridContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 3rem;
 }
 
 .gridContainer > div {
   display: flex;
   flex-direction: column;
 }
+  
+.gridItem {
+  border: dotted red 2px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin: 10px;
+  font-size: 30px;
+  text-align: center;
+} */
 
+/* ---------------------------------  form ----------------------------- */
 label {
   margin-bottom: 5px;
 }
@@ -145,4 +316,135 @@ button.center {
 
 button.center:hover {
   background-color: #0056b3;
+}
+
+/* -------------------- buttons --------------------- */
+.primary-button{
+  border-radius: 25px;
+  min-width: 260px;
+  min-height: 48px;
+  background-color: #111E4D;
+  border: solid 2px #111E4D;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+  text-align: center;
+}
+
+.primary-button-v2{
+  width: 418px;
+  height: 48px;
+  background-color: #111E4D;
+  border: solid 2px #111E4D;
+  color: white;
+  font-family: 'Inter';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+  text-align: center;
+}
+
+.secondary-button{
+  border-radius: 25px;
+  min-width: 138px;
+  min-height: 24px;
+  background-color: #FFFFFF;
+  color: black;
+  font-family: 'Inter';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29.05px;
+  text-align: center;
+}
+
+.secondary-button-v2{
+  border-radius: 25px;
+  min-width: 260px;
+  min-height: 48px;
+  background-color: #111E4D;
+  color: white;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+.box-Shadow{
+  box-shadow: 12px 12px 20px 0px #00000040;
+}
+
+.icon{
+  box-shadow: 12px 12px 20px 0px #00000040;
+  width: 37px;
+  height: 34px;
+}
+
+.meta-container{
+  width: 357px;
+  height: 19px;
+}
+
+.meta{
+  font-family: 'Inter';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+  text-align: center;
+}
+
+.loader-h{
+  width: 343px;
+  height: 3px;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loader svg {
+  font-size: 2rem;
+  color: #000;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% progress indicator %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555 */
+
+/* src/Progress.css */
+.progress-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.progress-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.progress-icons .completed {
+  font-size: 12px;
+  color: #4caf50;
+}
+
+.progress-icons .pending {
+  font-size: 10px;
+  color: #ccc;
+}
+
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  width: 0;
+  background-color: #4caf50;
+  transition: width 0.3s;
 }

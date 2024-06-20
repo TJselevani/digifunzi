@@ -1,4 +1,4 @@
-import Share from "../../components/layouts/share";
+import Share from "../../components/layouts/panel";
 import { FaCalendar, FaClock, FaLocationArrow } from "react-icons/fa";
 import LoremParagraph from '../../components/util/texts';
 import PricingCard from "../../components/layouts/pricing";

@@ -1,11 +1,12 @@
 import React from 'react'
+import { navbarLogo } from '../util/config'
 
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <div className="logo">
-        <h1> Digifunzi </h1>
-      </div>
+      <div className="logo image-crop-container " >
+          <img src={navbarLogo} style={{objectFit: 'contain'}} className='navbar-logo ' width={343} height={73} alt="Digifunzi" />
+      </div >
       <div className="links">
         <a href="/">About Us</a>
         <a href="/courses">Courses</a>
