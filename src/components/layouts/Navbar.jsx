@@ -5,9 +5,9 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo image-crop-container " >
-          <img src={navbarLogo} style={{objectFit: 'contain'}} className='navbar-logo ' width={343} height={73} alt="Digifunzi" />
+          <img src={navbarLogo} style={{objectFit: 'cover'}} className='navbar-logo ' width={343} height={73} alt="Digifunzi" />
       </div >
-      <div className="links">
+      <div className="links mid">
         <a href="/">About Us</a>
         <a href="/courses">Courses</a>
         <a href="/events">Events</a>

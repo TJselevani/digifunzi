@@ -6,10 +6,10 @@ import {  footerLogo, primaryColor } from '../util/config';
 export default function Footer() {
   return (
     <footer style={{backgroundColor: primaryColor}}>
-        <div className='split' >
+        <div className='split mid' >
 
           <div className="footerLogoContainer image-crop-container " >
-              <img src={footerLogo} style={{objectFit: 'contain'}} className='logo' width={352} height={112} alt="Digifunzi" />
+              <img src={footerLogo} style={{objectFit: 'cover'}} className='logo' width={352} height={112} alt="Digifunzi" />
           </div >
 
           <div className='footerList' >
