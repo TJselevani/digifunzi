@@ -2,12 +2,16 @@ import Share from "../../components/layouts/panel";
 import { FaCalendar, FaClock, FaLocationArrow } from "react-icons/fa";
 import LoremParagraph from '../../components/util/texts';
 import PricingCard from "../../components/layouts/pricing";
+import styles from '../../styles/Event.module.css';
+import { eventImage } from '../../components/util/config'
 
 const PricingPage = () => {
+    const userStyles = { backgroundImage: `url(${eventImage})`, backgroundSize: 'cover', minWidth: '1138px', minHeight: '544px'}
     return ( 
-        <div className="container">
-            <h1>Pricing Page</h1>
-            <Share />
+        <div className="container mid">
+            <div className={styles.banner} style={{margin: '37px auto'}}>
+                <Share userStyles={userStyles}/>
+            </div>
 
             <div className="content">
                 <h2>UI/UI SUMMER BOOT CAMP. 2024</h2>

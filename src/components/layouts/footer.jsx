@@ -30,10 +30,10 @@ export default function Footer() {
               <span><p className='split-h'> <h1>&copy;</h1>2024 Digifunzi</p></span>
             </div>
             <div className="split">
-              <FaInstagram className='link'/> 
-              <FaTwitter className='link'/>
-              <FaFacebook className='link'/>
-              <FaLinkedin className='link'/>
+              <FaInstagram className='link icon'/> 
+              <FaTwitter className='link icon'/>
+              <FaFacebook className='link icon'/>
+              <FaLinkedin className='link icon'/>
             </div>
             </div>
         </div>

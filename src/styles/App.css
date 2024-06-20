@@ -173,6 +173,15 @@ footer{
 }
 
 /* ------------------------------------- row ----------------------------- */
+
+.row{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  gap: 2rem;
+}
+
 .split{
   display: flex;
   justify-content: space-around;
@@ -201,6 +210,13 @@ footer{
   width: 100%;
 }
 
+.spacer-v{
+  margin: 1rem 0;
+}
+
+.spacer-h{
+  margin: 0 1rem;
+}
 
 /* ---------------------------------------- column --------------------------------- */
 .split-v{
@@ -216,6 +232,14 @@ footer{
   justify-content: space-around;
   align-items: center;
   gap: 1em;
+}
+
+.split-v-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2rem;
 }
 
 /* ----------------------------------------- Panel --------------------------------- */
@@ -346,6 +370,31 @@ button.center:hover {
   text-align: center;
 }
 
+/* Hover effect */
+.primary-button:hover {
+  transform: scale(1.1); /* Slightly larger button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
+}
+
+/* Active/Pressed effect */
+.primary-button:active {
+  transform: scale(0.95); /* Slightly smaller button */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+
+/* Hover effect */
+.primary-button-v2:hover {
+  transform: scale(1.1); /* Slightly larger button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
+}
+
+/* Active/Pressed effect */
+.primary-button-v2:active {
+  transform: scale(0.95); /* Slightly smaller button */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
 .secondary-button{
   border-radius: 25px;
   min-width: 138px;
@@ -367,6 +416,18 @@ button.center:hover {
   color: white;
 }
 
+/* Hover effect */
+.secondary-button:hover {
+  transform: scale(1.1); /* Slightly larger button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
+}
+
+/* Active/Pressed effect */
+.secondary-button:active {
+  transform: scale(0.95); /* Slightly smaller button */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 .box-Shadow{
   box-shadow: 12px 12px 20px 0px #00000040;
@@ -376,6 +437,19 @@ button.center:hover {
   box-shadow: 12px 12px 20px 0px #00000040;
   width: 37px;
   height: 34px;
+}
+
+
+/* Hover effect */
+.icon:hover {
+  transform: scale(1.1); /* Slightly larger button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
+}
+
+/* Active/Pressed effect */
+.icon:active {
+  transform: scale(0.95); /* Slightly smaller button */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow */
 }
 
 .meta-container{

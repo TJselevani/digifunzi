@@ -1,0 +1,70 @@
+.banner{
+    min-height: 544px;
+    box-shadow: 12px 12px 20px 0px #00000040;
+}
+
+.eventTitle{
+    margin-top: 119px;
+    max-width: 1066px;
+    min-height: 64px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56.25px;
+    text-align: left;
+    color: #000000;
+}
+
+.eventTitle h2{
+    font-family: 'Roboto' sans-serif;
+    margin: 30px 0;
+}
+
+.eventParagraph{
+    margin-top: 8px;
+    width: 570px;
+    height: 32px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+    text-align: left;
+    color: #000000;
+}
+
+.eventParagraph p{
+    font-family: 'Roboto' sans-serif;
+}
+
+.eventSchedule{
+    margin-top: 91px;
+}
+
+.eventAbout{
+    margin-top: 20px;
+}
+
+.eventAbout h1{
+    max-width: 265px;
+    min-height: 40px;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.5px;
+    text-align: left;
+    color: #000000;
+}
+
+.eventAbout p{
+    margin-top: 20px;
+    max-width: 950px;
+    min-height: 72px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+    text-align: left;
+    color: #000000;
+}
+
+.eventCard{
+    margin-top: 30px;
+}
