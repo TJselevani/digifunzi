@@ -1,0 +1,74 @@
+.paymentCard{
+    width: auto;
+    height: 597px;
+    border-radius: 15px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    border: 1px solid #000000;
+    margin: '0 auto'
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 15px;
+    margin-bottom: 5px;
+}
+
+.paymentMethod{
+    min-width: 450px;
+    min-height: 126px;
+    background: #111E4D;
+    color: #ffffff;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.05px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    margin-left: 6rem;
+    width: 971px;
+    height: 387px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29.05px;
+    text-align: left;
+}
+
+.content p{
+    margin: 10px 0px;
+}
+
+.button{
+    width: 269px;
+    height: 89px;
+    border-radius: 25px 0px 0px 0px;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48.41px;
+    text-align: center;
+}
+
+.x{
+    display: flex;
+    gap: 310px;
+}
+
+.x p {
+    margin: 10px 0px;
+}
+
+.primary-button-v3.active {
+    background-color: #111E4D;;
+    color: white;
+}
+
+.primary-button-v3.inactive {
+    background-color: grey;
+    color: lightgrey;
+}

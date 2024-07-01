@@ -9,7 +9,8 @@
 }
 
 /* ---------------  Nav bar ------------------ */
-.navbar{
+/* Navbar base styles */
+.navbar {
   margin-top: 31px;
   margin-left: 99px;
   margin-right: 99px;
@@ -26,53 +27,39 @@
   overflow: hidden;
   transform: scale(s.2);
 }
- 
 
-.navbar .logo{
+.navbar .logo {
   margin-right: auto;
 }
-
-.navbar .links{
-
-}
-
-/* .navbar .links a{
-  color: #000000;
-  margin: 0 20px;
-  width: 126.42px;
-  height: 24px;
-  font-family: 'Inter';
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24.2px;
-  text-align: left;
-} */
-/* Add these styles to your CSS file */
 
 .navbar .links a {
   color: #000000;
   margin: 0 20px;
-  padding: 10px 5px; /* Add padding to make it look like a button */
-  border-radius: 5px; /* Rounded corners for the button shape */
+  padding: 10px 5px;
+  border-radius: 5px;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24.2px;
   text-align: left;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar .links a:hover {
-  background-color: #001f3f; /* Deep blue color for hover */
-  color: #ffffff; /* White text color on hover */
+  background-color: #001f3f;
+  color: #ffffff;
 }
 
 .navbar .links a.active {
-  background-color: #001f3f; /* Deep blue color for active link */
-  color: #ffffff; /* White text color for active link */
+  background-color: #001f3f;
+  color: #ffffff;
 }
 
+.navbar .links.active {
+  background-color: #001f3f;
+  color: #ffffff;
+}
 
 .nav2{
   margin: 20px 0;
@@ -244,7 +231,6 @@ footer{
 
 /* ----------------------------------------- Panel --------------------------------- */
 .panel{
-  border: dashed black 1px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -308,7 +294,6 @@ footer{
 }
   
 .gridItem {
-  border: dotted red 2px;
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   margin: 10px;
@@ -370,6 +355,21 @@ button.center:hover {
   text-align: center;
 }
 
+.primary-button-v3{
+  border-radius: 10px;
+  min-width: 260px;
+  min-height: 60px;
+  min-width: 100%;
+  background-color: #111E4D;
+  border: solid 2px #111E4D;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 28.13px;
+  text-align: center;
+}
+
 /* Hover effect */
 .primary-button:hover {
   transform: scale(1.1); /* Slightly larger button */
@@ -394,6 +394,24 @@ button.center:hover {
   transform: scale(0.95); /* Slightly smaller button */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow */
 }
+
+/* Hover effect */
+.primary-button-v3:hover {
+  transform: scale(1.1); /* Slightly larger button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
+}
+
+/* Active/Pressed effect */
+.primary-button-v3:active {
+  transform: scale(0.95); /* Slightly smaller button */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+.primary-button-v3.inactive {
+  background-color: grey;
+  color: lightgrey;
+}
+
 
 .secondary-button{
   border-radius: 25px;
@@ -521,4 +539,12 @@ button.center:hover {
   width: 0;
   background-color: #4caf50;
   transition: width 0.3s;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-right{
+  text-align: right;
 }

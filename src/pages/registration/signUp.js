@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from '../../styles/Register.module.css';
 
 const SignUpPage = () => {
     const [formData, setFormData] = useState({
@@ -26,9 +27,9 @@ const SignUpPage = () => {
 
     return (
         <div>
-            <div>
-                <h2>User Registration</h2>
-            </div>
+            <div className="mid">
+            <div className={styles.formContainer}>
+            <div style={{padding: '20px 30px'}}>
             <form onSubmit={handleSubmit}>
                 <div className="gridContainer">
                     <div>
@@ -37,6 +38,7 @@ const SignUpPage = () => {
                             type="text" 
                             id="firstName" 
                             name="firstName" 
+                            placeholder="John"
                             value={formData.firstName} 
                             onChange={handleChange} 
                         />
@@ -47,7 +49,8 @@ const SignUpPage = () => {
                         <input 
                             type="text" 
                             id="lastName" 
-                            name="lastName" 
+                            name="lastName"
+                            placeholder="Doe" 
                             value={formData.lastName} 
                             onChange={handleChange} 
                         />
@@ -59,6 +62,7 @@ const SignUpPage = () => {
                             type="email" 
                             id="emailAddress" 
                             name="emailAddress" 
+                            placeholder="Johndoe@hotmail.com"
                             value={formData.emailAddress} 
                             onChange={handleChange} 
                         />
@@ -70,6 +74,7 @@ const SignUpPage = () => {
                             type="text" 
                             id="phoneNumber" 
                             name="phoneNumber" 
+                            placeholder="(+254)753748596"
                             value={formData.phoneNumber} 
                             onChange={handleChange} 
                         />
@@ -81,6 +86,7 @@ const SignUpPage = () => {
                             type="text" 
                             id="childsName" 
                             name="childsName" 
+                            placeholder="Surname Jr"
                             value={formData.childsName} 
                             onChange={handleChange} 
                         />
@@ -92,15 +98,24 @@ const SignUpPage = () => {
                             type="text" 
                             id="childsSchool" 
                             name="childsSchool" 
+                            placeholder="School Academy"
                             value={formData.childsSchool} 
                             onChange={handleChange} 
                         />
                     </div>
-
-                    <button className="center" type="submit">Register</button>
+                   
+                   
+                    
                 </div>
+                <button className=" primary-button-v3" style={{width: '100%', marginTop: '50px' }} type="submit">Register</button>
             </form>
-            <p>Already have an account? <a href="/SignIn">Sign In</a></p>
+            
+            </div>
+            <div style={{margin: '50px 0 50px 30px', fontSize: '20px'}}>
+                <p>Already have an account? <a href="/SignIn">Sign In</a></p>
+            </div>
+            </div>
+            </div>
         </div>
     );
 }

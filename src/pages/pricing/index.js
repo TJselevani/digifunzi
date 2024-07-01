@@ -14,7 +14,7 @@ const PricingPage = () => {
             </div>
 
             <div className="content">
-                <h2>UI/UI SUMMER BOOT CAMP. 2024</h2>
+                <h2>UI/UX SUMMER BOOT CAMP. 2024</h2>
                 <p>First edition of the international schools summer <br/> boot camp program</p>
                 <div className="spacer-v">
                   <div className="row"><FaCalendar /> <p> Monday, July 22nd - Saturday, July 27th </p></div>

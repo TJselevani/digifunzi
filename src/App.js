@@ -14,6 +14,7 @@ import SignUpPage from './pages/registration/signUp';
 import SignInPage from './pages/registration/SignIn';
 import GetStarted from './pages/get-started/index';
 import Ticket from './components/ticket';
+import Message from './components/layouts/success';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/pricing"element={ <PricingPage/> }/>
           <Route path="/api/*"element={ <GetStarted/> }/>
           <Route path="/ticket"element={ <Ticket/> }/>
+          <Route path="/message"element={ <Message/> }/>
           <Route path="*"element={ <PlaceHolder/> }/>
         </Routes>
       </Router>

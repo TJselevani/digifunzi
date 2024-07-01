@@ -1,0 +1,25 @@
+.carouselContainer {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 25px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.slide {
+    position: relative;
+    z-index: -1;
+}
+
+.image {
+    width: 100%;
+    border-radius: 10px;
+    filter: blur(4px); /* Initial blur */
+    transition: filter 0.3s ease-in-out;
+}
+
+.slide:hover .image {
+    filter: blur(0); /* Remove blur on hover */
+}

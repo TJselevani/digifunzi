@@ -1,0 +1,41 @@
+.container{
+    /* border: 2px solid black; */
+    margin: 20em auto;
+    max-width: 600px;
+    height: 30em;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 12px 12px 20px 0px #00000040;
+}
+
+.top{
+    height: 2em;
+    border-radius: 15px 15px 0px 0px;
+    background: #111E4D;
+}
+
+.textContainer h1{
+    margin: 2em auto;
+    width: 15em;
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.19px;
+    text-align: center;
+}
+
+.textContainer p{
+    margin: 1em auto;
+    width: 20em;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.05px;
+    text-align: center;
+}
+
+.buttonContainer{
+    margin: 4em auto;
+    border-radius: 25px;
+    width: 344px;
+    height: 64px;
+}

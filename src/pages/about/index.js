@@ -6,6 +6,7 @@ import Banner from '../../components/layouts/welcome';
 import Card from '../../components/layouts/card';
 import { image6 } from '../../components/util/config';
 import ProgressIndicator from '../../components/layouts/progress';
+import CountdownTimer from '../../components/layouts/countDown';
 
 const HomePage = () => {
     const [currentPage, setCurrentPage] = useState(12); // Example current page
@@ -40,12 +41,13 @@ const HomePage = () => {
                             <div className={styles.layoutParagraphContainer}> <p className={styles.layoutParagraph}> { layoutParagraph } </p> </div>
                             <div className={styles.layoutButtonContainer}> <button className='primary-button'>Get Your Tickets Now</button></div>
                             <div className={styles.layoutTimerContainer}>                                
-                                <div className={styles.timerTitleContainer}><h1 className={styles.timerTitle}>Ticket Sales End In: </h1></div>
+                                {/* <div className={styles.timerTitleContainer}><h1 className={styles.timerTitle}>Ticket Sales End In: </h1></div>
                                 <div className='split'>
                                     <div className={styles.time}> { 24 } <p> HRS</p></div>
                                     <div className={styles.time}> { 24 } <p> Minutes</p></div>
                                     <div className={styles.time}> { 24 } <p> seconds</p></div>
-                                </div>
+                                </div> */}
+                                <CountdownTimer styles={styles} endTime={'2025-12-31T23:59:59'}/>
                             </div>
                         </div>
                     </div>
